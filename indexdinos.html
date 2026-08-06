@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ChocoDinos | Chocolates Artesanales</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FFF8F0;
+    color:#3B2414;
+}
+
+/* NAV */
+
+nav{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    z-index:999;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#5C3A21;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#3B2414;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#C89B3C;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-family:'Playfair Display',serif;
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+.hero-text h2{
+    color:#C89B3C;
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.btn1{
+    background:#5C3A21;
+    color:white;
+}
+
+.btn1:hover{
+    transform:translateY(-5px);
+    background:#3B2414;
+}
+
+.btn2{
+    background:#C89B3C;
+    color:white;
+}
+
+.btn2:hover{
+    transform:translateY(-5px);
+}
+
+.hero-image{
+    width:45%;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+/* FEATURES */
+
+.features{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+    font-family:'Playfair Display';
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin:20px 0;
+}
+
+.icon{
+    font-size:55px;
+}
+
+/* ABOUT */
+
+.about{
+    padding:80px 8%;
+    text-align:center;
+    background:#5C3A21;
+    color:white;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    line-height:2;
+    margin-top:25px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#3B2414;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-image{
+    width:100%;
+    margin-bottom:40px;
+}
+
+.hero-text h1{
+    font-size:45px;
+}
+
+.buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:0 12px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<div class="logo">🦖 ChocoDinos</div>
+
+<ul>
+<li><a href="#">Inicio</a></li>
+<li><a href="#">Productos</a></li>
+<li><a href="#">Galería</a></li>
+<li><a href="#">Contacto</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Chocolates Artesanales</h1>
+
+<h2>Detalles que enamoran 🍫</h2>
+
+<p>
+Creamos chocolates, fresas cubiertas y regalos especiales
+para endulzar cualquier ocasión.
+Cada producto es elaborado con dedicación y mucho cariño.
+</p>
+
+<div class="buttons">
+
+<a href="catalogo.html" class="btn btn1">Ver Catálogo</a>
+
+<a href="https://wa.me/message/OQKVRWY24V7NG1" class="btn btn2">WhatsApp</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="Chocodino.jpeg" alt="Chocolates">
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2 class="section-title">¿Por qué elegirnos?</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">🍫</div>
+
+<h3>Chocolate Premium</h3>
+
+<p>Ingredientes de excelente calidad para un sabor único.</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">❤️</div>
+
+<h3>Hecho con Amor</h3>
+
+<p>Cada detalle está preparado artesanalmente.</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🎁</div>
+
+<h3>Regalos Especiales</h3>
+
+<p>Perfectos para cumpleaños, aniversarios y sorpresas.</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🚚</div>
+
+<h3>Pedidos por WhatsApp</h3>
+
+<p>Haz tu pedido de forma rápida y sencilla.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2 class="section-title">Nuestra Historia</h2>
+
+<p>
+
+En ChocoDinos creemos que un pequeño detalle puede alegrar el día de una persona.
+Por eso elaboramos cada producto con dedicación, creatividad y los mejores ingredientes,
+para que cada regalo sea una experiencia inolvidable.
+
+</p>
+
+</section>
+
+<footer>
+
+© 2026 ChocoDinos • Todos los derechos reservados.
+
+</footer>
+
+</body>
+</html>
